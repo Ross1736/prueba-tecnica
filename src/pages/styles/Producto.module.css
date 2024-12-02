@@ -1,0 +1,184 @@
+.producto {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 120px;
+}
+
+@media screen and (max-width: 1400px) {
+  .producto {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .producto {
+    width: 90%;
+    gap: 60px;
+  }
+}
+
+.seccion_principal {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.seccion_principal picture {
+  width: 240px;
+  aspect-ratio: 4/5;
+}
+
+.seccion_principal picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.seccion_principal_informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.seccion_principal_titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* lista */
+
+.seccion_principal_informacion_lista {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.seccion_principal_opciones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.seccion_principal_opciones li {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid var(--color-5);
+}
+
+.seccion_principal_opciones .opcion_activa {
+  background: var(--color-5);
+}
+
+.seccion_principal_opciones .opcion_no_activa {
+  background: var(--color-blanco);
+}
+
+.seccion_principal button {
+  margin-top: 20px;
+}
+
+.alerta {
+  font-size: 14px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .seccion_principal {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .seccion_principal picture {
+    width: 80%;
+  }
+
+  .seccion_principal_informacion {
+    width: 100%;
+  }
+
+  .seccion_principal button {
+    width: 100%;
+  }
+
+  .alerta {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
+/* DATOS */
+
+.seccion_datos {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: var(--color-neutro-1);
+}
+
+.tabla_producto {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabla_producto th,
+.tabla_producto td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-1);
+}
+
+.tabla_producto th {
+  background-color: var(--color-5);
+  color: var(--color-blanco);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tabla_producto td {
+  font-size: 14px;
+  color: var(--color-neutro-7);
+}
+
+.tabla_producto tr:hover {
+  cursor: default;
+  background-color: var(--color-1);
+}
+
+.tabla_producto td {
+  word-wrap: break-word;
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .tabla_producto th,
+  .tabla_producto td {
+    padding: 10px 15px;
+  }
+
+  .tabla_producto td {
+    font-size: 12px;
+  }
+}
