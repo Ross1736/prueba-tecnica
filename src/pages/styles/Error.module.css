@@ -1,0 +1,41 @@
+/* Error.module.css */
+.error_contenedor {
+  height: 100vh;
+  background-color: var(--color-blanco);
+  color: var(--color-neutro-7);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error_contenido {
+  text-align: center;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.error_titulo {
+  color: var(--color-5);
+  font-size: 36px;
+}
+
+.bloque_codigo {
+  background-color: var(--color-1);
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 20px 30px;
+  margin: 20px 0;
+}
+
+.enlace_volver {
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: none;
+}

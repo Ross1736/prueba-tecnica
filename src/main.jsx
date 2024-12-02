@@ -6,10 +6,12 @@ import { BrowserRouter } from "react-router-dom";
 import Menu from "./components/Menu.jsx";
 import ContextProvider from "./context/ContextProvider.jsx";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <ContextProvider>
-      <Menu />
+      {API_URL && <Menu />}
 
       <Routes>
         {Rutas.map((ruta) => (
