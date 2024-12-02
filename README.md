@@ -9,11 +9,12 @@ Esta aplicación ha sido desarrollada como parte de una prueba técnica para el 
 - React
 - Vite
 - JavaScript
-- React Router (para enrutado)
+- React Router Dom (para enrutado)
 
 ## Requisitos
 
 - Node.js (recomendado versión 20)
+- **Variable de entorno**: Se requiere una variable de entorno para el funcionamiento adecuado de la aplicación. Asegúrate de crear un archivo `.env.local` en la raíz del proyecto y definir la variable `VITE_API_URL` con la URL de la API.
 
 ## Instalación y Uso
 
