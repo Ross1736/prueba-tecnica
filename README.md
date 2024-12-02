@@ -24,3 +24,21 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 ```bash
 git clone https://github.com/Ross1736/prueba-tecnica.git
 ```
+
+### 2. Instala las dependencias
+
+```bash
+npm install
+```
+
+### 3. Ejecuta el proyecto
+
+```bash
+npm run dev
+```
+
+Luego, accede a `http://localhost:5173` para ver el proyecto en acción.
+
+## Autor
+
+Ticona Valencia Bryan Roselbet
