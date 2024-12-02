@@ -8,7 +8,7 @@ Esta aplicación ha sido desarrollada como parte de una prueba técnica para el 
 
 - React
 - Vite
-- Js
+- JavaScript
 - React Router (para enrutado)
 
 ## Requisitos
@@ -57,7 +57,7 @@ Luego, accede a `http://localhost:4173/` para ver el proyecto en acción.
 npm run test
 ```
 
-### 6. Ejecuta los lint
+### 6. Ejecuta el lint
 
 ```bash
 npm run lint
