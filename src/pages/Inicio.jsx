@@ -3,8 +3,13 @@ import { useState, useEffect, useMemo, useContext } from "react";
 import Tarjeta from "../components/Tarjeta.jsx";
 import Buscador from "../components/Buscador.jsx";
 import { GeneralContext } from "../context/Contextos.jsx";
+import { useNavigate } from "react-router-dom";
+
+const URL_API = import.meta.env.VITE_API_URL;
 
 function Inicio() {
+  const navigate = useNavigate();
+
   const { datosDb } = useContext(GeneralContext);
 
   const [textoBuscar, setTextoBuscar] = useState("");
@@ -19,12 +24,22 @@ function Inicio() {
   }, [textoBuscar]);
 
   const productosFiltrados = useMemo(() => {
+    if (!Array.isArray(datosDb) || datosDb.length === 0) {
+      return [];
+    }
+
     return datosDb.filter(
       (e) =>
         e.model.toLowerCase().includes(debouncedTextoBuscar.toLowerCase()) ||
         e.brand.toLowerCase().includes(debouncedTextoBuscar.toLowerCase())
     );
   }, [datosDb, debouncedTextoBuscar]);
+
+  useEffect(() => {
+    if (!URL_API) {
+      navigate("/error");
+    }
+  }, [navigate]);
 
   return (
     <main className={estilo.inicio}>
