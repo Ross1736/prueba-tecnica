@@ -1,4 +1,4 @@
-# Prueba Técnica: Tienda de Dispositivos Móviles
+# Prueba Técnica: TFront-End Test
 
 ## Descripción
 
@@ -19,7 +19,7 @@ Esta aplicación ha sido desarrollada como parte de una prueba técnica para el 
 
 Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 
-### 1. Clona el repositorio
+### 1. Clona el repositorio / Descarga el código fuente
 
 ```bash
 git clone https://github.com/Ross1736/prueba-tecnica.git
@@ -31,13 +31,41 @@ git clone https://github.com/Ross1736/prueba-tecnica.git
 npm install
 ```
 
-### 3. Ejecuta el proyecto
+### 3. Ejecuta el proyecto en modo desarrollo
 
 ```bash
 npm run dev
 ```
 
 Luego, accede a `http://localhost:5173` para ver el proyecto en acción.
+
+### 4. Ejecuta el proyecto en modo producción
+
+```bash
+npm run build
+```
+
+```bash
+npm start
+```
+
+Luego, accede a `http://localhost:4173/` para ver el proyecto en acción.
+
+### 5. Ejecuta los tests
+
+```bash
+npm run test
+```
+
+### 6. Ejecuta los lint
+
+```bash
+npm run lint
+```
+
+## Licencia
+
+Este proyecto está destinado exclusivamente para el uso de la **Prueba Técnica** del puesto de Desarrollador Frontend. No se permite su uso, distribución ni modificación fuera de este contexto sin el consentimiento explícito del autor.
 
 ## Autor
 
