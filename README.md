@@ -1,4 +1,4 @@
-# Prueba Técnica: TFront-End Test
+# 🎉 Prueba Técnica: Tienda de Dispositivos Móviles 📱
 
 ## Descripción
 
@@ -6,15 +6,19 @@ Esta aplicación ha sido desarrollada como parte de una prueba técnica para el 
 
 ## Tecnologías usadas
 
-- React
-- Vite
-- JavaScript
-- React Router Dom (para enrutado)
+- React ⚛️
+- Vite 🚀
+- JavaScript 💻
+- React Router Dom (para enrutado) 🔄
 
 ## Requisitos
 
 - Node.js (recomendado versión 20)
 - **Variable de entorno**: Se requiere una variable de entorno para el funcionamiento adecuado de la aplicación. Asegúrate de crear un archivo `.env.local` en la raíz del proyecto y definir la variable `VITE_API_URL` con la URL de la API.
+
+  ```bash
+  VITE_API_URL=https://example.com/
+  ```
 
 ## Instalación y Uso
 
@@ -64,10 +68,10 @@ npm run test
 npm run lint
 ```
 
-## Licencia
+## 📝 Licencia
 
 Este proyecto está destinado exclusivamente para el uso de la **Prueba Técnica** del puesto de Desarrollador Frontend. No se permite su uso, distribución ni modificación fuera de este contexto sin el consentimiento explícito del autor.
 
-## Autor
+## 👨‍💻 Autor
 
 Ticona Valencia Bryan Roselbet
